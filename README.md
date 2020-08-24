@@ -19,13 +19,38 @@ https://data.mendeley.com/datasets/b9x7xxb9sz/1#file-232b6c5a-cda2-4c71-a47d-9c8
 
 ## Usage
 
-FuzzyBIO_main.ipynb 
+Use the main function in FuzzyBIO_main.ipynb 
 
+This script will: 
+
+- turn the BIOHD annotations into FuzzyBIO annotations
+- train NER models (10-fold CV) using distilbert (cased)
+- analyse the results of the NER models trained using FuzzyBIO and using BIOHD
+
+optional if ConceptNorm set to True:
+- Link the extracted entities to the concept normalization annotations provided with perfect entities 
+- Train concept normalization models (10-fold CV) using distilbert (uncased)
+- Analyse the results of these models on perfect data, imperfect BIOHD and imperfect FuzzyBIO data 
 
 BERT implementation is based on Huggingface Transformers [2] with a ktrain wrapper [1]
-main. normlaization optional. 
 
-Data provided is CADEC data set [4]. For all datasets we provide the fold dicts and for all concept dicts?
+We provide the CADEC data [4] (BIOHD labelled), text dict, concept dict and folddict. These can be used to understand the input format necessary for these files. Please refers the authors below [4] if you use this data. For all datasets we provide the fold dicts for replication and concept dicts if possible*. 
+
+* For some data sets the data is publicly available but a DUA needs to be signed. 
+
+## Example usage with CADEC (also in FuzzyBIO_main)
+
+data = load_obj('./data/CADEC_BIOHD')
+folddict = load_obj('./data/folddict_CADEC')
+txtdict = load_obj('./data/txtdict_CADEC')
+conceptdict = load_obj('./data/conceptdict_CADEC')
+
+modelpath = './data/mednorm_raw_10n_40l_5w_64dim.bin'
+
+os.mkdir('./Results/") 
+outfolder = './Results/'
+
+main(data, folddict, outfolder, ConceptNorm = True, txt_dict = txtdict, concept_dict = conceptdict, modelpath = modelpath)
 
 
 ## References 

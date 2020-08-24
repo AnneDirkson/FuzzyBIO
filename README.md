@@ -19,6 +19,9 @@ https://data.mendeley.com/datasets/b9x7xxb9sz/1#file-232b6c5a-cda2-4c71-a47d-9c8
 
 ## Usage
 
+FuzzyBIO_main.ipynb 
+
+
 BERT implementation is based on Huggingface Transformers [2] with a ktrain wrapper [1]
 main. normlaization optional. 
 

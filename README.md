@@ -56,6 +56,15 @@ outfolder = './Results/'
 
 main(data, folddict, outfolder, ConceptNorm = True, txt_dict = txtdict, concept_dict = conceptdict, modelpath = modelpath)
 
+## Additional notes on linking discontinuous entities 
+
+In our scripts, discontinuous entities are linked according to the following rules: 
+
+- step 1: First entity parts are linked by attaching all I tags to previous B, HI to previous HB and DI to previous DB. (this already solves non-overlapping discontinuous entities). 
+
+- step 2: If the entity part starts with HB, check 4 tags to the left and 4 to the right for entity parts starting with DB. 
+-- If there are only two, join the head entity to each non-head entity to form 2 entities
+-- If there are more than two, use the sentence endings to determine if they fall in the same sentence. If this still results in more than 4 non-head entity parts, use only those on either the left or right side of the head entity based on which is within shortest distance to the head entity. 
 
 ## References 
 

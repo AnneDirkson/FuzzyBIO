@@ -40,14 +40,15 @@ We provide the CADEC data [4] (BIOHD labelled), text dict, concept dict and fold
 
 ## Example usage with CADEC (also in FuzzyBIO_main)
 
-data = load_obj('./data/CADEC_BIOHD')
-folddict = load_obj('./data/folddict_CADEC')
-txtdict = load_obj('./data/txtdict_CADEC')
-conceptdict = load_obj('./data/conceptdict_CADEC')
+-data = load_obj('./data/CADEC_BIOHD')
+-folddict = load_obj('./data/folddict_CADEC')
+-txtdict = load_obj('./data/txtdict_CADEC')
+-conceptdict = load_obj('./data/conceptdict_CADEC')
 
 modelpath = './data/mednorm_raw_10n_40l_5w_64dim.bin'
 
 os.mkdir('./Results/") 
+
 outfolder = './Results/'
 
 main(data, folddict, outfolder, ConceptNorm = True, txt_dict = txtdict, concept_dict = conceptdict, modelpath = modelpath)

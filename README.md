@@ -27,11 +27,6 @@ This script will:
 - train NER models (10-fold CV) using distilbert (cased)
 - analyse the results of the NER models trained using FuzzyBIO and using BIOHD
 
-optional if ConceptNorm set to True:
-- Link the extracted entities to the concept normalization annotations provided with perfect entities 
-- Train concept normalization models (10-fold CV) using distilbert (uncased)
-- Analyse the results of these models on perfect data, imperfect BIOHD and imperfect FuzzyBIO data 
-
 BERT implementation is based on Huggingface Transformers [2] with a ktrain wrapper [1]
 
 We provide the CADEC data [4] (BIOHD labelled), text dict, concept dict and folddict. These can be used to understand the input format necessary for these files. Please refers the authors below [4] if you use this data. For all datasets we provide the fold dicts for replication and concept dicts if possible*. 

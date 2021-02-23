@@ -1,7 +1,7 @@
 # FuzzyBIO
 FuzzyBIO is a fuzzy continuous representation of discontinuous entities. It transforms these entities into continuous sequences by annotating all tokens in between. 
 
-This repository contains scripts to transform your data; and analyse the impact on NER. To analyse the impact on subsequent normalization, we refer you to the [BioSyn repository] (https://github.com/dmis-lab/BioSyn) 
+This repository contains scripts to transform your data; and analyse the impact on NER. To analyse the impact on subsequent normalization, we refer you to the [BioSyn repository](https://github.com/dmis-lab/BioSyn) 
 
 ## Prerequisites
 

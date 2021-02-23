@@ -7,11 +7,11 @@ This repository contains scripts to transform your data; and analyse the impact 
 
 ### Using pip 
 
-pip install --upgrade pip pip install -r ./env/requirements.txt
+`pip install --upgrade pip pip install -r ./env/requirements.txt`
 
 ### Using conda 
 
-conda env create -f ./env/environment.yml
+`conda env create -f ./env/environment.yml`
 
 ## Usage
 

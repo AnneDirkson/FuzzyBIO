@@ -16,13 +16,7 @@ from Fuzzify_Annotations import Fuzzify
 
 from BERTforNERktrain import BERTforNER
 
-from ExtractSimplifiedConcepts import AnnotateImperfect 
-
 from CollectNERResults import NER_results
-
-from ConceptNormalisationBERT import ConceptNorm
-
-from ConceptNormResults import ConceptNormEval
 
 
 # In[ ]:

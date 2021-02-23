@@ -5,7 +5,7 @@ This repository contains scripts to transform your data; and analyse the impact 
 
 If you use this code please cite: 
 
-Dirkson, A., Verberne, S. & Kraaij, W. (2021). FuzzyBIO: A Proposal for Fuzzy Representation of Discontinuous Entities. Proceedings of the 17th LOUHI workshop at EACL 2021.
+*Dirkson, A., Verberne, S. & Kraaij, W. (2021). FuzzyBIO: A Proposal for Fuzzy Representation of Discontinuous Entities. Proceedings of the 17th LOUHI workshop at EACL 2021.*
 
 ## Prerequisites
 
@@ -62,8 +62,8 @@ In our scripts, discontinuous entities are linked according to the following rul
 
 ## References 
 
-1.Maiya, A. S. (2020). ktrain: A Low-Code Library for Augmented Machine Learning. Retrieved from http://arxiv.org/abs/2004.10703
+1. Maiya, A. S. (2020). ktrain: A Low-Code Library for Augmented Machine Learning. Retrieved from http://arxiv.org/abs/2004.10703
 
-2.Wolf, T., Debut, L., Sanh, V., Chaumond, J., Delangue, C., Moi, A., … Brew, J. (2019). Transformers: State-of-the-art Natural Language Processing. ArXiv. Retrieved from https://huggingface.co
+2. Wolf, T., Debut, L., Sanh, V., Chaumond, J., Delangue, C., Moi, A., … Brew, J. (2019). Transformers: State-of-the-art Natural Language Processing. ArXiv. Retrieved from https://huggingface.co
 
-3.Karimi, S., Metke-Jimenez, A., Kemp, M., & Wang, C. (2015). Cadec: A corpus of adverse drug event annotations. Journal of Biomedical Informatics, 55, 73–81. https://doi.org/10.1016/J.JBI.2015.03.010
+3. Karimi, S., Metke-Jimenez, A., Kemp, M., & Wang, C. (2015). Cadec: A corpus of adverse drug event annotations. Journal of Biomedical Informatics, 55, 73–81. https://doi.org/10.1016/J.JBI.2015.03.010

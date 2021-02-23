@@ -28,7 +28,8 @@ BERT implementation is based on Huggingface Transformers [2] with a ktrain wrapp
 We provide the CADEC data [3] (BIOHD labelled), text dict, concept dict and folddict. These can be used to understand the input format necessary for these files. Please refers the authors below [3] if you use this data. For all datasets we provide the fold dicts for replication. 
 
 
-### Example usage with CADEC (also included in FuzzyBIO_main)
+### Example usage with CADEC 
+This is also included in FuzzyBIO_main
 
 ```
 data = load_obj('./data/CADEC_BIOHD')
